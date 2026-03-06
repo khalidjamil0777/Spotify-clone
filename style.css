@@ -1,0 +1,444 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #000000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: #000000;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.main_content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.music_player{
+    background-color: #000000;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+} 
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: fit-content;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity:1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.7rem 0 1.5rem 0;
+    padding: 0.25rem 1rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 600;
+    height: 2rem;
+    width: fit-content;
+    margin-top: 0.25rem;
+}
+
+.badge:hover{
+    transform: scale(1.1);
+}
+
+
+.dark-badge{
+    background-color: #000000;
+    color: #fff;
+    border: 0.1rem solid white;
+    opacity: 0.7;
+}
+
+.nav-legal-options{
+    background-color: #121212;
+    font-size: 0.7rem;
+    padding: 1rem 0.75rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    height: 9rem;
+}
+
+.nav-legal-options a{
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    opacity: 0.7rem;
+}
+.cookies{
+    font-size: 1rem;
+    margin-top: .25rem;
+}
+
+.cookies:hover{
+    text-decoration: underline;
+}
+
+.globe{
+    margin-top: 0.75rem;
+}
+
+.globe i{
+    margin-right: .25rem;
+}
+
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 1;
+}
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
+
+.icon-hover:hover{
+    transform: scale(1.1);
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items{
+    margin-right: 1rem;
+}
+
+.sticky-nav-icons img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 13.4rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity:0.8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+}
+
+.controls{
+    width: 25%;
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin:0 1rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.album{
+    display: flex;
+    align-items: center;
+    
+}
+
+.album_picture{
+    margin-left: 2rem;
+}
+
+.album_picture:hover{
+    transform: scale(1.1);
+}
+
+.album_name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    line-height: 1rem;
+}
+
+.song_name{
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.song_name:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.singer_name{
+    font-size: 0.7rem;
+}
+
+
+.singer_name:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.album_icon{
+    display: flex;
+    margin-left: 2rem;
+
+}
+
+.album_icon1{
+    margin-top: .7rem;
+    padding-right: .5rem;
+    height: 1.5rem;
+}
+
+.album_icon2{
+    margin-top: .5rem;
+    height: 2rem;
+}
+
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 50%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #08cf3d;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+
+.controls{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.controls img{
+    margin-right: .4rem;
+}
+
+.controls img:hover{
+    transform: scale(1.1);
+}
+.controls_icon3{
+    height: 1.25rem;
+    margin-top: .6rem;
+    margin-right: 0.4rem;
+}
+
+.controls_icon4{
+    height: 1rem;
+    margin-top: .7rem;
+}
+
+
+
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume{
+    width: 35%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.volume::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.volume::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #156ebc;
+    border-radius: 50%;
+    margin-top: -6px;
+}
